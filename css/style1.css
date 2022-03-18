@@ -1,5 +1,6 @@
 /* ID representado com uma cerquilha , nenhum outro elemento pode ter esse id*/
 #principal{
+    color: red;
     background-color: blueviolet;
 }
 
@@ -22,4 +23,14 @@ h1{
 h1{
     /* rgb e exadecimal serão basicamente a mesma coisa só que com representações diferentes */
     color: #70a5ae;
+}
+
+#lorem{
+    background: url(../assets/ben-jerry-20180410-001.jpg);
+    background-repeat: no-repeat;
+    /* Posso usar também repeat y ou x para repetir só um e cover */
+    background-attachment: fixed;
+    /* O background padrão é o scrow, no fixed ele rola junto com a página. assim como também pode ser center */
+    background: url(../assets/ben-jerry-20180410-001.jpg) center/cover no-repeat fixed;
+    /* criando em unica linha */
 }
