@@ -1,0 +1,9 @@
+/* ID representado com uma cerquilha , nenhum outro elemento pode ter esse id*/
+#principal{
+    background-color: blueviolet;
+}
+
+/*  A diferença da classe para o id é que a classe eu posso usar em mais de um elemento .*/
+.verde{
+    color: black;
+}
