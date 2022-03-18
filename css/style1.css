@@ -7,3 +7,19 @@
 .verde{
     color: black;
 }
+
+/* Diferença entre cores */
+
+h1{
+    color: dodgerblue;
+    /* Aqui tenho uma cor que será apenas exatamente o que o nome dela determina */
+}
+h1{
+    color: rgb(0, 100, 200 );
+    /* Aqui eu tenho 250 tonalidades para variar a cor com rgb e e rgba com canal de transparência */
+}
+
+h1{
+    /* rgb e exadecimal serão basicamente a mesma coisa só que com representações diferentes */
+    color: #70a5ae;
+}
