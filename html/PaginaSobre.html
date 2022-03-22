@@ -5,23 +5,21 @@
     <title>Document</title>
 </head>
 <style>
-    /* As unidades aqui tem sua medida fixa e podem alterar o seu tamanho mudando de tela, mas não alteram a sua métrica. */
-    #px{
+   /* Aumentar a quantidade de pixels aumenta automaticamente o tamanho do em seja da fonte ou objetos*/
+   /* Mesmo que eu aplique na largura essa unidade ainda via estar ligada ao tamanho da fonte */
+   .container{
+        font-size: 25px;
+
+        width: 300px;
+        background: red;
+    }
+    .inside{
+        font-size: 2em;
+
+        width: 1em;
         background-color: blue;
-        width: 10px;
-        height: 10px;
     }
-    #pt{
-        background-color: red;
-        width: 10pt;
-        height: 10pt;
-    }
-    #pc{
-        background-color: pink;
-        width: 1pc;
-        height: 1pc;
-    }
-    
+    /* Quando eu passei o tamanho para 2em, o meu objeto filho herdou  o tamanho de 2em e quando eu declarei 1em ao tamanho é 1em em relação ao 2em do objeto pai.*/
 </style>
 <body>
     <h1>Programador BR</h1>
@@ -66,8 +64,11 @@
         <td>contato2@yahoo.com</td>
     </tr>
 
-    <div id="px"></div>
-    <div id="pt"></div>
-    <div id="pc"></div>
+    Texto no body
+    <div class="container">
+        Texto no container
+        <div class="inside"></div>
+            texto no inside
+    </div>
 </body>
 </html>
