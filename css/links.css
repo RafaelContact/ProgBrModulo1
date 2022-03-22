@@ -1,0 +1,25 @@
+.links{
+    /* configurando a aparencia do botão */
+    text-decoration: none;
+    color: blue; 
+    padding: 10px;
+    color: #bc2a35;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #bc2a35;
+}
+.links:visited{
+/* Esse seletor mostra depois do link ter sido selecionado */
+    color: red;
+}
+.links:hover { 
+    /* funciona ao passar o mouse em cima */
+    background-color: #bc2a35;
+    color: white;
+}
+.links:active{ 
+    /* funciona ao clicar */
+    background-color: #bc2a35;
+    color: white;
+}
