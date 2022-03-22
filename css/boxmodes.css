@@ -5,11 +5,14 @@ body{
 .container{
     background-color: red;
     padding: 5px;
-    border: 5px solid blue;
+    border: 7px solid blue;
     margin: 10px;
 }
+/* Aqui tenho dois elementos um dentro do outro então a visão é que parece um elemento só  */
 .conteudo{
     background-color: #dddd;
-    border: 5px solid green;
+    outline: 5px solid green;
     padding: 5px;
+
+/*  O outline não trabalha com boxmodel, então é como se ele criasse uma novo plano e ficasse onde a borda ficaria mas sem o boxmodel considerar seu tamanho */
 }
