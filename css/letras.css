@@ -1,0 +1,11 @@
+p{
+    color: red;
+    text-align: center;  
+    /* podendo também ser direita ou esqueda. */
+    text-align: justify;
+    text-indent: 35px; 
+  
+}
+/* text-transform: upper-case;
+  text-transform: lowercase;
+    text-transform: capitalize; */
