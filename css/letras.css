@@ -1,16 +1,11 @@
 p{
-    color: black;
-    text-indent: 15px;
-    /*
-    text-decoration: line-through;
-    text-decoration: underline;
-    text-decoration: overline;
-    text-decoration: underline overline line-through;
-    text-decoration: none; */
+    font-family: Arial, "Comic Sans MS", sans-serif;
 
-    letter-spacing: 2px ; /* podendo receber valores negativos */
-    line-height: 0.8em;
+    /* Aqui eu chamo as fontes até que uma funcione no computador do usuário. */
+    font-style: italic;
+    /* Aqui no font weight eu posso colocar várias configurações de tamanho não so bold. e vai depender da familia da minha fonte */
+    font-weight: 500 ;
 
-    word-spacing: 3px;
-    /* Com text shadow eu coloco primeiro o deslocamento para esquerda e depoix para baixo */
-    text-shadow: 1px 1px rgba(180, 180, 180, 0.8)
+    font-variant: small-caps;
+    /* Permite que todas as fontes fiquei minusculas mas não tira o carater maiusculo das maiusculas. */
+}
