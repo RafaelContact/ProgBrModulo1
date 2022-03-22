@@ -1,0 +1,43 @@
+/* O desafio desse módulo é criar um cartão de visitas.
+Dicas:
+
+    O tamanho utilizado foi 400px x 200px
+    Utilize o conceito de listas para criar os links para as redes sociais */
+    body{
+        background-color: #dddddd;
+    }
+    div{
+        /* definindo tamanho e imagem de fundo */
+        width: 400px;
+        height: 200px;
+        background-image: url(../assets/desafio1/Imagens/backgorund.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; não funciona por que o elemento tem seu tamanho e margem definidas */
+        /* definindo posicionamento */
+        margin: auto;
+        margin-top: 30vh;
+        padding: 1em;
+        box-sizing: border-box;
+        /* definindo letras */
+        font-family: 'Roboto Serif', serif;
+       
+    }
+    .insta{
+        list-style-image: url(../assets/desafio1/Imagens/Insta.png);
+    }
+    .twiter {
+        list-style-image: url(../assets/desafio1/Imagens/Twitter.png)
+    }
+    .yt{
+        list-style-image: url(../assets/desafio1/Imagens/Youtube.png);
+    }
+
+    h1{
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+    ul{
+        text-transform: uppercase;
+        font-weight: 200;
+    }
