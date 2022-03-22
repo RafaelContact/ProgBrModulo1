@@ -1,11 +1,16 @@
 p{
-    color: red;
-    text-align: center;  
-    /* podendo também ser direita ou esqueda. */
-    text-align: justify;
-    text-indent: 35px; 
-  
-}
-/* text-transform: upper-case;
-  text-transform: lowercase;
-    text-transform: capitalize; */
+    color: black;
+    text-indent: 15px;
+    /*
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: underline overline line-through;
+    text-decoration: none; */
+
+    letter-spacing: 2px ; /* podendo receber valores negativos */
+    line-height: 0.8em;
+
+    word-spacing: 3px;
+    /* Com text shadow eu coloco primeiro o deslocamento para esquerda e depoix para baixo */
+    text-shadow: 1px 1px rgba(180, 180, 180, 0.8)
