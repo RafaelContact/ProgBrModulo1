@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none;
+    /* list-style-type: disc , square , circle; */
+}
+ol{
+    list-style-type: none;
+    /* list-style-type: upper-roman,  lower-roman, upper-alpha, lower-alpha; */
+}
+
+/* armenian 	The marker is traditional Armenian numbering
+cjk-ideographic 	The marker is plain ideographic numbers
+decimal 	The marker is a number
+decimal-leading-zero 	The marker is a number with leading zeros (01, 02, 03, etc.)
+georgian 	The marker is traditional Georgian numbering
+hebrew 	The marker is traditional Hebrew numbering
+hiragana 	The marker is traditional Hiragana numbering
+hiragana-iroha 	The marker is traditional Hiragana iroha numbering
+katakana 	The marker is traditional Katakana numbering
+katakana-iroha 	The marker is traditional Katakana iroha numbering
+lower-greek 	The marker is lower-greek
+lower-latin 	The marker is lower-latin (a, b, c, d, e, etc.)  */
+
