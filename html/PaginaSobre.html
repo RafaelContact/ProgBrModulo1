@@ -5,21 +5,34 @@
     <title>Document</title>
 </head>
 <style>
-   /* Aumentar a quantidade de pixels aumenta automaticamente o tamanho do em seja da fonte ou objetos*/
-   /* Mesmo que eu aplique na largura essa unidade ainda via estar ligada ao tamanho da fonte */
-   .container{
-        font-size: 25px;
-
-        width: 300px;
-        background: red;
-    }
-    .inside{
-        font-size: 2em;
-
-        width: 1em;
-        background-color: blue;
-    }
-    /* Quando eu passei o tamanho para 2em, o meu objeto filho herdou  o tamanho de 2em e quando eu declarei 1em ao tamanho é 1em em relação ao 2em do objeto pai.*/
+   /* - rem
+    
+    Parecido com o em, mas ele faz referencia ao tamanho da fonte do elemento raiz.
+    
+    se eu modificar o tamanho da fonte do elemento html, vou alterar valor de tudo que estiver em rem.
+    
+- vw
+    
+    Equivalente a largura da janela medido em porcentagem. 
+    1% para cada VW.
+    
+- vh
+    
+    Relativo ao tamanho da altura da janela. cada vh é 1% do tamanho da altura.
+    
+- vmin
+    
+    Referente a menor dimensão. 
+    Se a largura for menor do que altura ele vai ser da largura. 
+    Se a altura for menor do que a largura passa a ser referente a altura.
+    
+- vmax
+    
+    A mesma coisa que o vmin, só que agora usando a que vem como maior de referencia.
+    
+- porcentagem
+    
+    Ele herda do elemento o pai quando 100% */
 </style>
 <body>
     <h1>Programador BR</h1>
