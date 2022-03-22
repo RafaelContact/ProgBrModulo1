@@ -2,17 +2,12 @@ body{
     padding: 0px;
     margin: 0px;
 }
-.container{
-    background-color: red;
-    padding: 5px;
-    border: 7px solid blue;
-    margin: 10px;
-}
-/* Aqui tenho dois elementos um dentro do outro então a visão é que parece um elemento só  */
-.conteudo{
-    background-color: #dddd;
-    outline: 5px solid green;
-    padding: 5px;
-
-/*  O outline não trabalha com boxmodel, então é como se ele criasse uma novo plano e ficasse onde a borda ficaria mas sem o boxmodel considerar seu tamanho */
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 10px solid black;
+    /*  toda vez que coloco um tamanho maior em qualquer elemento do box model todo o elemento aumenta. Se eu quiser que não aumente use o borderbox */
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px 0px;
 }
