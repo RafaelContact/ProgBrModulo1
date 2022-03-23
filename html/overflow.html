@@ -12,14 +12,16 @@
             background-color: blue;
             width: 300px;
             height: 100px;
-    /*  ESCONDE TODO O CONTEÚDO QUE ESTIVER FORA DO CONTAINER */
-            overflow: hidden;
- 
+    /* FAZ BARRAS DE ROLAGENS PARA MOSTRAR TODO CONTEÚDO DA DIV SEM VAZAR */
+    overflow: scroll;
+            /* Coloca barras de rolagem só onde precisa */
+    overflow: auto;
+
+    /* overflow-y: ; DELIMITANDO PELO EIXO QUAL OVERFLOW PODERIA ESCOLHER  */
         }
     </style>
 </head>
 <body>
-<!-- OVERFLOW PADRÃO VISIBLE, texto vazando  -->
     <div id="container">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ducimus, minus sint ipsum repellat dicta voluptatibus aspernatur officiis placeat dolorem quod vitae et aliquid totam doloremque laborum. Placeat, sapiente ad.
     </div>
