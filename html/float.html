@@ -16,19 +16,25 @@
         #img2{
             float: right;
         }
-
-    /* CLEAR FUNCIONANDO */
+        
         p{
 
-            clear: both;
-            /* com esse elemento eu limpo qualquer float que possa alterar o posicionamento do meu elemento, na esquerda , direita ou os dois*/
+        
         } 
+        div{
+            /* observe que o float escondeu a borda sem o overflow*/
+            border: 1px solid black;
+    /* USADO PARA FAZER COM QUE SE CUBRA TODOS OS ELEMENTOS */
+            overflow: auto;
+        }
     </style>
 </head>
 <body>
-    <!-- O elemento float não esconde conteúdo, mas pode esconder objetos -->
+    <!-- O elemento float não esconde conteúdo, mas pode esconder objetos-->
+<div>
     <img  id="img1" src="../assets/streamline-icon-skull-2@48x48.PNG" alt="" style="width: 200px;">
     <img id="img2" src="../assets/streamline-icon-skull-2@48x48.PNG" alt="" style="width: 200px;">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt, aut magni expedita in impedit similique quis architecto molestiae incidunt neque, quo perferendis hic amet nostrum sunt eius? Odit, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quaerat enim neque eaque, perferendis quo modi tempora dolor quis mollitia aliquam aspernatur labore maiores illo eligendi quisquam ducimus natus nostrum!</p>
+</div>
 </body>
 </html>
