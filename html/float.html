@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body{
+            font-size: 1.2rem;
+        }
+        #img1{
+    /* COM FLOAT IMG A IMAGEM CRIA UM NOVO PLANO ONDE OS OBJETOS RESPONDEM "SÓ AO SEU TAMANHO E POSICIONAMENTO", ELEMENTOS DISPLAY BLOCK OCUPAM A MESMA LINHA DESDE O TOPO */
+            float: left ;
+        }
+        #img2{
+            float: right;
+        }
+
+    /* ATIVE E DESATIVE O COMENTÁRIO ABAIXO PARA VER A DIFERENÇA DO DISPLAY*/
+        p{
+            /* display: inline; */
+        } /* Com o display inline o meu paragrafo ficará ao final da minha imagem e não no topo*/ 
+    </style>
+</head>
+<body>
+    <!-- O elemento float não esconde conteúdo, mas pode esconder objetos -->
+    <img  id="img1" src="../assets/streamline-icon-skull-2@48x48.PNG" alt="" style="width: 200px;">
+    <img id="img2" src="../assets/streamline-icon-skull-2@48x48.PNG" alt="" style="width: 200px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt, aut magni expedita in impedit similique quis architecto molestiae incidunt neque, quo perferendis hic amet nostrum sunt eius? Odit, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quaerat enim neque eaque, perferendis quo modi tempora dolor quis mollitia aliquam aspernatur labore maiores illo eligendi quisquam ducimus natus nostrum!</p>
+</body>
+</html>
