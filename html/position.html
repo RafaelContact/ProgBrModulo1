@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* POSITION: STATIC; PADRÃO  */
+        /* TODO ELEMENTO STATIC DO TIPO BLOCK FICA EMBAIXO UM DO OUTRO */
+        .quadrado{
+            width: 100px;
+            height: 100px;
+        }
+        .quadrado-red{
+            background-color: red;
+
+        }
+        .quadrado-blue{
+            background-color: blue;
+        /* AGORA O ELEMENTO É RELATIVO A ELE MESMO E NÃO A OBJETO PAI */
+            position: relative;
+            /* O elemento cria um novo plano , e se movimenta dentro do novo plano sem perder seu posicionamento no plano anterior*/
+            left: 20px;
+            top: 20px;
+        }
+        .quadrado-green{
+            background-color: green;
+        }
+        .quadro{
+            width: 500px;
+            height: 400px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quadro">
+
+<!-- A div tem display do tipo block, por isso os quadrados ficam um embaixo do outro -->
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>
+</body>
+</html>
