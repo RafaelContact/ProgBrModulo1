@@ -21,14 +21,16 @@
         <p>E aqui a historia continua</p>
     </div>
 
-    <p> Aqui eu tenho o inicio de um paragrafo <span>um SPAM no meio </span> e o fim do paragrafo</p>
-            <!-- o span ele tem o display inline, e por isso não quebra a linha , não modifica altura e largura -->
+    <p> Aqui eu tenho o inicio de um paragrafo <span style="display: inline-block; width: 500px; background-color: pink;">um SPAM no meio </span> e o fim do paragrafo</p>
+            <!-- display inline block, não quebra a linha , e agora  modifica altura e largura -->
 
 <!-- AGORA A LINHA SE QUEBRA DENTRO DO PARAGRAFO PARA DIV ENTRAR -->
     <p style="background-color: blue;"> Aqui eu tenho o inidio de um paragrafo <div style="background-color: red;"> uma div no meio</div> E o fim do paragrafo</p>
        <!-- Elementos do tipo block dentro de elementos do tipo block quebram o paragrafo -->
 
 <!-- IMAGEM NO MEIO DO PARAGRAFO -->
-    <p> Aqui eu tenho o inicio de um paragrafo <img src="../assets/streamline-icon-skull-2@48x48.PNG" alt="skull"> E o fim do paragrafo</p>
+    <p> Aqui eu tenho o inicio de um paragrafo <img src="../assets/streamline-icon-skull-2@48x48.PNG" alt="skull" style="width: 100px; display: none;"> E o fim do paragrafo</p>
+        <!-- display inlineblock usado também em imagens que permite ajustar ela sem quebrar a linha -->
+        <!-- display none, faz com que um elemento nunca tenha existido na exibição -->
 </body>
 </html>
