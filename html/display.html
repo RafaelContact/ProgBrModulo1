@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/display.css">
+    <title>dISPLAY</title>
+</head>
+<body>
+
+<!--  OBSERVE QUE NESTA PARTE A DIV, FAZ COM QUE AS LINHAS SEJAM QUEBRADAS E PULE PARA PROXIMA COM O USO DA DIV -->
+        <div style="background-color: blue;">
+            <div>Esta é uma div normal</div>
+            <div>Aqio a história <div style="background-color: red; width: 500px;">de dentro</div> continua.</div>
+                <!-- observe que o display block usa toda a linha, da pra modificar altura e largura -->
+        </div>
+<!-- AQUI ALÉM DE PULAR PARA PROXIMA LINHA OS ESPAÇOS DOS PARAGRAFOS SÃO MAIORES -->
+    <div>
+        <p>Este é um parágrafo normal</p>
+        <p>E aqui a historia continua</p>
+    </div>
+
+    <p> Aqui eu tenho o inicio de um paragrafo <span>um SPAM no meio </span> e o fim do paragrafo</p>
+            <!-- o span ele tem o display inline, e por isso não quebra a linha , não modifica altura e largura -->
+
+<!-- AGORA A LINHA SE QUEBRA DENTRO DO PARAGRAFO PARA DIV ENTRAR -->
+    <p style="background-color: blue;"> Aqui eu tenho o inidio de um paragrafo <div style="background-color: red;"> uma div no meio</div> E o fim do paragrafo</p>
+       <!-- Elementos do tipo block dentro de elementos do tipo block quebram o paragrafo -->
+
+<!-- IMAGEM NO MEIO DO PARAGRAFO -->
+    <p> Aqui eu tenho o inicio de um paragrafo <img src="../assets/streamline-icon-skull-2@48x48.PNG" alt="skull"> E o fim do paragrafo</p>
+</body>
+</html>
