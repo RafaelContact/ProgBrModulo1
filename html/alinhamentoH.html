@@ -20,6 +20,11 @@
             /* Alinhamento a direita independente do tamanho da janela */
             margin-left: auto;
         }
+        img{
+         /* Para funcionar com margin é preciso que o elemento seja displayblock, e imagens vem com display inline */
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -27,5 +32,10 @@
     <div id="Quadrado">
 
     </div>
+
+    <!-- ALINHANDO UMA IMAGEM -->
+    <img src="../assets/streamline-icon-skull-2@48x48.PNG" alt="">
+        <!-- Ela não se alinha sem estar com displayblock por que ela vai precisar ocupar toda a linha para se movimentar livremente,
+             ou estar dentro de uma div, que automaticamente é display block-->
 </body>
 </html>
