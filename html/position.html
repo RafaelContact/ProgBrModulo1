@@ -19,11 +19,12 @@
         }
         .quadrado-blue{
             background-color: blue;
-/*  O ELEMENTO FIXA FIXO EM RELAÇÃO A VIEWPORT, SE MOVENDO JUNTO COM ELA E NÃO RESPONDENDO AO OBJETO PAI */
-            /* Cria um novo plano se destacando do plano anterior*/
-            position: fixed;
+        /* ESTE ELEMENTO FICARÁ GRUDADO NO TOP 0 DA TELA CASO SEJA ROLADO ATÉ CHEGAR LA EM CIMA  */
+            position: sticky;
+            /* essa posição poderá cobrir posicionamento static */
             right: 0px;
             top: 0px;
+             /* responde ao objeto pai, e permanece em sua posição original sem modificar outros objetos em relação a ele mesmo. */
 
         }
         .quadrado-green{
