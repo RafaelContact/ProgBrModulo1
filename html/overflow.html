@@ -12,18 +12,20 @@
             background-color: blue;
             width: 300px;
             height: 100px;
-    /* FAZ BARRAS DE ROLAGENS PARA MOSTRAR TODO CONTEÚDO DA DIV SEM VAZAR */
-    overflow: scroll;
-            /* Coloca barras de rolagem só onde precisa */
-    overflow: auto;
-
-    /* overflow-y: ; DELIMITANDO PELO EIXO QUAL OVERFLOW PODERIA ESCOLHER  */
+        /* oculta a imagem */
+            overflow: hidden;
+        /* fica por cima do container */
+            overflow: visible;
+        /* Fica com barra de rolagem */
+            overflow: scroll;
+            overflow-x: hidden;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ducimus, minus sint ipsum repellat dicta voluptatibus aspernatur officiis placeat dolorem quod vitae et aliquid totam doloremque laborum. Placeat, sapiente ad.
+        <img src="../assets/streamline-icon-skull-2@48x48.PNG" style=" width: 140px ;">
     </div>
+
 </body>
 </html>
