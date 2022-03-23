@@ -20,10 +20,15 @@
             /* Alinhamento a direita independente do tamanho da janela */
             margin-left: auto;
         }
+/* TEXT ALIGNE PARA POSICIONAR ELEMENTOS */
+        #container{
+            text-align: right;
+            /* Se por algum motivo não posso mudar a imagem para displayblock. Essa seria a forma de posiciona-la */
+        }
         img{
-         /* Para funcionar com margin é preciso que o elemento seja displayblock, e imagens vem com display inline */
-            margin: auto;
-            display: block;
+         /* Para funcionar com margin é preciso que o elemento seja displayblock, e imagens vem com display inline ,
+         inline block só funciona para tamanho do objeto não para posicionamento com margin auto.*/
+            margin: left;
         }
     </style>
 </head>
@@ -33,9 +38,11 @@
 
     </div>
 
+    <div id="container">
     <!-- ALINHANDO UMA IMAGEM -->
     <img src="../assets/streamline-icon-skull-2@48x48.PNG" alt="">
         <!-- Ela não se alinha sem estar com displayblock por que ela vai precisar ocupar toda a linha para se movimentar livremente,
              ou estar dentro de uma div, que automaticamente é display block-->
+    </div>
 </body>
 </html>
