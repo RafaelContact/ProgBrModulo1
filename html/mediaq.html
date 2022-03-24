@@ -42,9 +42,12 @@
             float: left;
             color: white;
         }
-/* QUANDO A TELA NA CONFIGURAÇÃO DE CIMA FICA PEQUENA ELA COMEÇA A TER COMPORTAMENTO ESTRANHO, ENTÃO ENTRA AS MEDIA QUERIES */
+/* PRESTE ATENÇÃO A ORDEM DE PRECEDENCENCIA DAS MEDIA QUERIES, NO EXEMPLO ABAIXO O VERMELHO NÃO FOI EXECUTADO POIS A ORDEMESTÁ INADEQUADA */
         @media screen and (max-width: 450px) {
-            /* max width, é se a tela tiver no maximo 400px ele será executado */
+            
+            .header{
+                background-color: red;
+            }
             .logo{
                 float: none;
                 text-align: center;
@@ -59,6 +62,12 @@
                 float: none;
                 margin-bottom: 5px;
                 padding: 10px;
+            }
+        }
+    /* TROCA DE COR QUANDO ATINTIR MAXIMO DE 750 PX */
+        @media screen and (max-width: 750px){
+            .header{
+                background-color: gray;
             }
         }
     </style>
