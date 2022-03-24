@@ -8,6 +8,7 @@
     <style>
         .card{
             /* Cards flutuam um ao lado do outro ambos do lado esquerdo */
+            position: relative;
             float:left;
             width: 400px;
             height: 200px;
@@ -15,11 +16,33 @@
             text-align: center;
         }
         .c1{
+    /* FORMA JA MOSTRADA NA AULA DE TEXTO */
             background-color: red;
             /* GAMBIARRA */
             line-height: 200px;
             /* line height não tem nenhuma equivalencia com o objeto pai ele apenas aumenta a distancia de uma fraze para outra, mas centraliza*/
         }
+        .c2{
+    /* NOVA FORMA USANDO TRANSFORM */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: blue;
+    /* A propriedade transform usada para fazer com que se movimente em relação ao seu eixo x e eixo y, semelhante a movimentação do objeto com position: relative */
+            transform: translate( -50%, -50%);
+        }
+        .card2{
+     /* FORMA CONVENCIONAL USANDO PADDING */
+            clear: left;
+            /* se não fosse o clear ele subiria lá para o lado */
+            float: left;
+            /* aqui usei o cloat, left para ele não usar a tela toda, se eu usasse o display inline-block meu clear left não funcionaria. */
+            border: 1px solid green;
+            padding: 100px 135px 100px 135px;
+            /* O problaema do paddin é que se eu aumentar ou diminuir meu conteúdo obrigadoriamente o tamanho do box muda, da pra alterar com box-sizin: borderbox e forçar o tamanho  */
+
+    }
+
     </style>
 </head>
 <body>
@@ -31,6 +54,11 @@
 
     <div class="card">
         <div class="c2">
+            rafael rodrigues
+        </div>
+    </div>
+    <div class="card2">
+        <div >
             rafael rodrigues
         </div>
     </div>
