@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            /* sem o overflow minha barra iria subir e ficar estranho se eu usasse o auto iria aparecer barra de rolagem */
+             overflow: hidden; 
+
+             /* ajustando o posicionamento do objeto */
+            margin: auto;
+            width: 80%;
+            background-color: #5C57A4;
+            padding: 15px;
+            font-size: 18px;
+        }
+        .menu{
+            list-style: none;
+            /* por ter tirado o margin e o padding da lista que foi necessário estar usando o overflow hiden para não sumir o objeto*/
+            margin: 0;
+            padding: 0;
+            /* para se usar o logo de um lado e o menu de outro foi usado o float */
+            float: right;
+            background-color: red;
+
+        }
+        li{
+            float: left;
+            color: white;
+            background-color: aqua;
+            margin-left: 15px;
+        }
+        .logo{
+            /* para se usar o logo de um lado e o menu de outro foi usado o float */
+            float: left;
+            color: white;
+        }
+/* QUANDO A TELA NA CONFIGURAÇÃO DE CIMA FICA PEQUENA ELA COMEÇA A TER COMPORTAMENTO ESTRANHO, ENTÃO ENTRA AS MEDIA QUERIES */
+        @media screen and (max-width: 450px) {
+            /* max width, é se a tela tiver no maximo 400px ele será executado */
+            .logo{
+                float: none;
+                text-align: center;
+            }
+            .menu{
+                margin-top: 20px;
+                float: none;
+                text-align: center;
+
+            }
+            li{
+                float: none;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            logo
+        </div>
+        <ul class="menu">
+            <li>home</li>
+            <li>Curssos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+ 
+</body>
+</html>
