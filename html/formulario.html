@@ -7,11 +7,11 @@
 <body>
 <!-- http://www.youtube.com/whath?v=vvvvcpwFw5o&list=RDvvvvcpwFw5o&start_radio=1 -->
     <!-- o watch?v= o sinal de igual não é nome e também não faz parte da busca, é só um divisor -->
-    <form method="GET" action="https://www.youtube.com/watch?"> 
-        <!-- Ao utilizar o metodo get, os dados enviados vão constar no endereço da página -->
+    <form method="GET" action="https://www.youtube.com/results?"> 
+        <!-- Ao utilizar o metodo get, eu posso coletar o action na url da página assim como o name -->
         
-        <input type="text" name="v" id="">   <!-- vvvvcpwFw5o&list=RDvvvvcpwFw5o&start_radio=1 -->
-        <!-- Agora se eu preencher com o valor referente ao video ele irá diretamente para lá, mas é o valor do video e não uma pesquisa normal-->
+        <input type="text" name="search_query" id="">   
+        <!-- valor para uma pesquisa normal no yt-->
         <input type="submit"  id=""> 
 
         <!-- SE O SERVIÇO FUNCIONA COM GET NÃO ADIANTA FAZER UMA REQUISIÇÃO COM O MÉTODO POST -->
