@@ -5,13 +5,16 @@
    <title>MOdulo HTML intermediario</title>
 </head>
 <body>
-<!-- QUANDO EU APERTAR ENTER, TODOS OS CAMPOS DO FORMULARIO VÃO SER ENVIADOS PARA O BACKEND -->
-    <form method="GET" action="http://xvideos"> 
+<!-- http://www.youtube.com/whath?v=vvvvcpwFw5o&list=RDvvvvcpwFw5o&start_radio=1 -->
+    <!-- o watch?v= o sinal de igual não é nome e também não faz parte da busca, é só um divisor -->
+    <form method="GET" action="https://www.youtube.com/watch?"> 
         <!-- Ao utilizar o metodo get, os dados enviados vão constar no endereço da página -->
-        <!-- Ao utilizar o metodo post, os dados enviados não são exibidos na url -->
-        <input type="text" name="email" id="">
-        <input type="text" name="nome" id="">
+        
+        <input type="text" name="v" id="">   <!-- vvvvcpwFw5o&list=RDvvvvcpwFw5o&start_radio=1 -->
+        <!-- Agora se eu preencher com o valor referente ao video ele irá diretamente para lá, mas é o valor do video e não uma pesquisa normal-->
         <input type="submit"  id=""> 
+
+        <!-- SE O SERVIÇO FUNCIONA COM GET NÃO ADIANTA FAZER UMA REQUISIÇÃO COM O MÉTODO POST -->
     </form>
 </body>
 </html>
