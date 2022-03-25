@@ -7,29 +7,16 @@
 <body>
 
     
-    <form method="GET" action="https://www.youtube.com/watch?"> 
-        <!-- Ao utilizar o metodo post, os dados enviados não vão  constar na url da página, indicado para password -->
-        
-        <input type="text" name="v" id=""> 
-        <!-- Agora se eu preencher com o valor referente ao video ele irá diretamente para lá, mas é o valor do video e não uma pesquisa normal-->
-        <input type="submit"  id=""> <br>
+    <form method="GET" action=""> 
+        <!-- o select cria um box com opções -->
+        <select name="estado" size="3"> <!-- o size faz com que tenha um múmero maximo de opções exibidas ao mesmo tempo com barra de rolagem-->
+            <option value="RJ">Rio de janeiro</option>
+            <option value="SP" selected>São Pãulo</option>
+            <!-- o atributo selected permite que seja exibido como primeira opção -->
+        </select>
+        <input type="submit">
+        <!-- MULTIPLE é um atributo que permite que eu selecione váris opções -->
 
-        <input type="password" name="senha"> <!--oculta os caracteres, recomendado usar apenas com metodo post--> <br>
-
-        <input type="checkbox" name="cursso" value="op1"> React Native <br>
-<!-- Ao usar o checkbox ele seleciona apenas on, caso eu crie mais de um não tem como saber qual foi selecionado -->
-        <input type="checkbox" name="cursso" value="op2"> React js <br>
-
-        <!-- coloque a opção value no seu checkbox para saber qual foi marcado -->
-     
-        <input type="radio" name="genero" value="M">Masculinho <br>
-        <input type="radio" name="genero" value="F">Feminino <br>
-        <!-- Nessa alternativa o seletor funciona apenas para uma opção -->
-    
-        <input type="reset" value="limpar">
-
-        <!-- colocando o value eu mudo o nome do botão -->
-        <!-- reset apaga tudo sem enviar -->
     </form>
 </body>
 </html>
