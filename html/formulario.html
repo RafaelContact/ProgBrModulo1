@@ -8,15 +8,23 @@
 
     
     <form method="GET" action="https://www.youtube.com/watch?"> 
-        <!-- Ao utilizar o metodo post, os dados enviados não vão  constar na url da página -->
+        <!-- Ao utilizar o metodo post, os dados enviados não vão  constar na url da página, indicado para password -->
         
         <input type="text" name="v" id=""> 
         <!-- Agora se eu preencher com o valor referente ao video ele irá diretamente para lá, mas é o valor do video e não uma pesquisa normal-->
-        <input type="submit"  id=""> 
+        <input type="submit"  id=""> <br>
 
-        <input type="password" name="senha"> <!--oculta os caracteres, recomendado usar apenas com metodo post-->
+        <input type="password" name="senha"> <!--oculta os caracteres, recomendado usar apenas com metodo post--> <br>
 
-        <!-- SE O SERVIÇO FUNCIONA COM GET NÃO ADIANTA FAZER UMA REQUISIÇÃO COM O MÉTODO POST -->
+        <input type="checkbox" name="cursso" value="op1"> React Native <br>
+<!-- Ao usar o checkbox ele seleciona apenas on, caso eu crie mais de um não tem como saber qual foi selecionado -->
+        <input type="checkbox" name="cursso" value="op2"> React js <br>
+
+        <!-- coloque a opção value no seu checkbox para saber qual foi marcado -->
+     
+        <input type="radio" name="genero" value="M">Masculinho <br>
+        <input type="radio" name="genero" value="F">Feminino <br>
+        <!-- Nessa alternativa o seletor funciona apenas para uma opção -->
     </form>
 </body>
 </html>
