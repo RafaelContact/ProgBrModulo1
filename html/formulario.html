@@ -5,14 +5,16 @@
    <title>MOdulo HTML intermediario</title>
 </head>
 <body>
-<!-- http://www.youtube.com/whath?v=vvvvcpwFw5o&list=RDvvvvcpwFw5o&start_radio=1 -->
-    <!-- o watch?v= o sinal de igual não é nome e também não faz parte da busca, é só um divisor -->
+
+    
     <form method="GET" action="https://www.youtube.com/watch?"> 
-        <!-- Ao utilizar o metodo get, os dados enviados vão constar no endereço da página -->
+        <!-- Ao utilizar o metodo post, os dados enviados não vão  constar na url da página -->
         
-        <input type="text" name="v" id="">   <!-- vvvvcpwFw5o&list=RDvvvvcpwFw5o&start_radio=1 -->
+        <input type="text" name="v" id=""> 
         <!-- Agora se eu preencher com o valor referente ao video ele irá diretamente para lá, mas é o valor do video e não uma pesquisa normal-->
         <input type="submit"  id=""> 
+
+        <input type="password" name="senha"> <!--oculta os caracteres, recomendado usar apenas com metodo post-->
 
         <!-- SE O SERVIÇO FUNCIONA COM GET NÃO ADIANTA FAZER UMA REQUISIÇÃO COM O MÉTODO POST -->
     </form>
