@@ -6,14 +6,19 @@
 </head>
 <body>
 
-<!-- SE MEU ELEMENTO NÃO TIVER NAME ELE NÃO VAI ENVIAR -->
-    <form method="GET" action=""> 
+<!-- SE EU ESTIVER ENVIANDO O ARQUIVO PARA O SERVIDOR, ELE PRECISA SER POST -->
+    <form method="post" action=""> 
 
-        <input type="text" name="assunto">
+        <input type="color" name="cor"><br>
+        <!-- Algumas opções não funcionam em todos os dispositivos. Exemplo desse campo de seleção de cores que não funciona no IOS -->
 
-            <textarea name="MENSAGEM" id="" cols="30" rows="10"></textarea>
-       <!-- SERVE PARA INSERIR TEXTOS GRANDES -->
-            <input type="submit">
+        <input type="date" name="data" max="2018-12-15"> <!-- posso selecionar a data com prazo maximo-->
+        <br>
+
+        <input type="datetime-local" name="hora" > <!-- posso selecionar a hora e data-->
+        <br>
+
+        <input type="submit" name="" id="">
     </form>
 </body>
 </html>
