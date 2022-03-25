@@ -9,15 +9,16 @@
 <!-- SE EU ESTIVER ENVIANDO O ARQUIVO PARA O SERVIDOR, ELE PRECISA SER POST -->
     <form method="post" action=""> 
 
-        <input type="color" name="cor"><br>
-        <!-- Algumas opções não funcionam em todos os dispositivos. Exemplo desse campo de seleção de cores que não funciona no IOS -->
-
-        <input type="date" name="data" max="2018-12-15"> <!-- posso selecionar a data com prazo maximo-->
+        <input type="number" name="numerico" min="5" max="10"> <!-- o campo só aceita números-->
         <br>
 
-        <input type="datetime-local" name="hora" > <!-- posso selecionar a hora e data-->
+        <input type="range" min="0" max="10"> <!-- mostra uma barra que arrasta com valor-->
         <br>
 
+        <input type="tel" name="telefone"> <!-- no celular ele exibe só o teclado numerico-->
+        <br>
+
+        <input type="email" name="email"> <!-- verifica se o que estou difitando é realmente um email para enviar-->
         <input type="submit" name="" id="">
     </form>
 </body>
