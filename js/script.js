@@ -2,18 +2,14 @@
 // || ou
 //  negativo
 
-var idade = 35
+var idade = 25
 
-var idade20 = idade >= 10
-var menor30 = idade <= 65
-//  se o valor der igual au número , eu vou conseguir maior eficiencia no código
-var gratuidadde = maior10 || menor65
-//  verifica se a idade está entre um e outro 
-console.log("idade", idade)
+var maior20 = idade >= 20
+var menor20 = !maior20;
+// sinal de negação, estou afirmando que se maior 20 fosse verdadeiro agora seria faso
 
-console.log(" Maior que vinte", maior10)
+console.log(" Maior que vinte", maior20)
 
-console.log("Menor que trinta", menor65)
+console.log("Menor que vinte", menor20)
 
-console.log("Tem direito a gratuidade ?")
-//  agora se um ou outro for falsso, o ou é falso, se for verdadeiro os dois são verdadeiros, só é falso quando os dois são falsos.
+console.log(!true)
