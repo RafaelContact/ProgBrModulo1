@@ -1,11 +1,16 @@
-//  Boolean
-// Null
-//  Undefined
-// Number
-// String
+// + Adição
+//  - subtração
+//  * Multiplicação
+//  / divisão
+//  % módulo
+//  ++ incremento
+//  -- Decremento
 
-var b= true;
-// Consigo fazer operações logicas com o boolean
+//  o sinal de igual é o sinal de atribuição
+var a = 10; 
+var b = 15; 
 
-console.log(b);
+var c = 2 + 3; 
+//  eu poderia atribuir um resultado, um número e uma string
 
+console.log(c);
