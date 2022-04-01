@@ -2,12 +2,20 @@
 // || ou
 //  negativo
 
-var a = true
-var b = false
+var idade = 35
 
-var c = a && b
-// a pergunta que estou fazendo é se a e b são verdadeiros , este sinal é de comparação lógica boleana
-console.log(c)
+var idade20 = idade > 20
+var menor30 = idade < 30
 
-var c = a || b
-console.log(c)
+var entre = maior20 && menor30
+//  verifica se a idade está entre um e outro 
+console.log("idade", idade)
+
+console.log(" Maior que vinte", maior20)
+
+console.log("Menor que trinta", menor30)
+
+console.log("Entre 20 e 30", entre)
+
+// var c = a || b
+// console.log(c)
