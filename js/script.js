@@ -3,4 +3,6 @@ var a;
 
 a = "hd";
 
+a = "placa de captura"
+
 console.log(a)
