@@ -4,18 +4,16 @@
 
 var idade = 35
 
-var idade20 = idade >= 20
-var menor30 = idade <= 30
+var idade20 = idade >= 10
+var menor30 = idade <= 65
 //  se o valor der igual au número , eu vou conseguir maior eficiencia no código
-var entre = maior20 && menor30
+var gratuidadde = maior10 || menor65
 //  verifica se a idade está entre um e outro 
 console.log("idade", idade)
 
-console.log(" Maior que vinte", maior20)
+console.log(" Maior que vinte", maior10)
 
-console.log("Menor que trinta", menor30)
+console.log("Menor que trinta", menor65)
 
-console.log("Entre 20 e 30", entre)
-
-// var c = a || b
-// console.log(c)
+console.log("Tem direito a gratuidade ?")
+//  agora se um ou outro for falsso, o ou é falso, se for verdadeiro os dois são verdadeiros, só é falso quando os dois são falsos.
