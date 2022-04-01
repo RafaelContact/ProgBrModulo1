@@ -1,5 +1,4 @@
+//  Agora a variável a tem um valor definido que poderá ser exibida no console
+var a = "Placa de captura"
 
-// até o momento, a variavel não tem nenhum valor, então se eu pedir para exibir o quem tem nela não vai ter nenhum valor.
-var a;
-
-console.log("Hellowww")
+console.log(a)
