@@ -4,8 +4,8 @@
 // Number
 // String
 
-var b= null;
-// Se eu preencher ela com algum valor, posso limpar com a null
+var b= true;
+// Consigo fazer operações logicas com o boolean
 
 console.log(b);
 
