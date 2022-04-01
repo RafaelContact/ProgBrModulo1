@@ -1,10 +1,11 @@
-//  A ordem é de extrema importância nesse caso
-var a;
+//  Boolean
+// Null
+//  Undefined
+// Number
+// String
 
-var b = "hd";
+var a = " Primeira linha \n segunda linha";
+var b = 1;
 
-a = "placa de captura"
-
-b = a;
-
-console.log(b)
+console.log(a);
+console.log(b);
