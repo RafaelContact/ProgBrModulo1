@@ -6,21 +6,17 @@
 //  ++ incremento
 //  -- Decremento
 
-//  o sinal de igual é o sinal de atribuição
-var a = 10; 
-var b = 15; 
-
-var c = 2 + 3; 
-var c = 2 - 3;
-var c = a / b;
-var c = a * b;
-var c = a % b; // Retorna o valor do resto da divisão, ( apenas números reais)
-
-//  Em js eu só tenho um tipo de numero , que é o number, em outras linguagens eu tenho números inteiros, números reais e etc.
-
-console.log(c);
-
 var a= 30;
 
-a--; // diminui um
-a++; // decrescenta um
+var b = a--;
+//  nesse caso ele coloca o valor de a em b e depois decrescenta de a, então b já recebeu a e não exibe seu valor alterado
+console.log(b);
+console.log(a);
+
+var c = --a;
+
+console.log(c);
+// nesse caso ele decresce 1 e depois acrescenta o valor de a
+
+--a; // diminui um
+++a; // decrescenta um
