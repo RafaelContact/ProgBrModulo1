@@ -1,8 +1,10 @@
-//  Agora a variável a tem um valor definido que poderá ser exibida no console
+//  A ordem é de extrema importância nesse caso
 var a;
 
-a = "hd";
+var b = "hd";
 
 a = "placa de captura"
 
-console.log(a)
+b = a;
+
+console.log(b)
