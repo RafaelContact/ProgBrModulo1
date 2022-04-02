@@ -6,6 +6,10 @@
     <title>Document</title>
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .bloco{
             height: 1500px;
             width: 300px;
@@ -13,26 +17,36 @@
         }
         .quadrado{
             width: 200px;
-            height: 200px;
+            height: 600px;
             background-color: blue;
+            
+            
             
            
         }
         .quadrado2{
             width: 200px;
-            height: 200px;
+            height: 400px;
+            position: fixed;
+            top: 0px;
+            left: 50%;
+            transform: translate(-75%);
+            /*  o fixed sempre fica por cima dos elementos em qualquer outra posição, então preciso forçar que os outros elementos cubram ele */
+            z-index: -1 ;
         }
         .quadrado3{
             width: 200px;
-            height: 200px;
+            height: 600px;
             background-color: blueviolet;
+            margin-top: 400px;
+            
         }
     </style>
 </head>
 <body>
     <div class="bloco"> 
         <div class="quadrado"></div>
-        <div class="quadrado2"> <img src="../assets/ben-jerry-20180410-001.jpg" alt="" width="200px" height="200px" ></div>
+        <div class="quadrado2"> <img src="../assets/ben-jerry-20180410-001.jpg" alt="" width="200px" height="400px" ></div>
         <!-- Se eu aumentar o tamanho da imagem sem aumentar o tamnho da div ela irá cobrir o quadrado de baixo, até que eu use o parametro overflow. -->
         <div class="quadrado3"></div>
     </div>
