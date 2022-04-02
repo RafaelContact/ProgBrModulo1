@@ -12,15 +12,15 @@
         }
         .bloco{
             height: 1500px;
-            width: 300px;
-            margin: auto;
+            width: 100%;
         }
         .quadrado{
             width: 200px;
             height: 600px;
             background-color: blue;
-            
-            
+            /* o margin auto faz com que meus objetos passem a desconsiderar a margin do objeto abaixo */
+            position: relative;
+            left: 22%;
             
            
         }
@@ -28,17 +28,18 @@
             width: 200px;
             height: 400px;
             position: fixed;
-            top: 0px;
+            top: 10px;
             left: 50%;
-            transform: translate(-75%);
+            transform: translate(-50%);
             /*  o fixed sempre fica por cima dos elementos em qualquer outra posição, então preciso forçar que os outros elementos cubram ele */
             z-index: -1 ;
         }
         .quadrado3{
-            width: 200px;
-            height: 600px;
+            width: 100%;
+            height: 800px;
             background-color: blueviolet;
-            margin-top: 400px;
+            margin-top: 300px;
+            
             
         }
     </style>
