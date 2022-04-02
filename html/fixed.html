@@ -15,17 +15,15 @@
             width: 100%;
         }
         .quadrado{
-            width: 200px;
+            width: 100%;
             height: 600px;
             background-color: blue;
             /* o margin auto faz com que meus objetos passem a desconsiderar a margin do objeto abaixo */
-            position: relative;
-            left: 22%;
             
            
         }
         .quadrado2{
-            width: 200px;
+            width: 300px;
             height: 400px;
             position: fixed;
             top: 10px;
@@ -47,7 +45,7 @@
 <body>
     <div class="bloco"> 
         <div class="quadrado"></div>
-        <div class="quadrado2"> <img src="../assets/ben-jerry-20180410-001.jpg" alt="" width="200px" height="400px" ></div>
+        <div class="quadrado2"> <img src="../assets/ben-jerry-20180410-001.jpg" alt="" width="300px" height="400px" ></div>
         <!-- Se eu aumentar o tamanho da imagem sem aumentar o tamnho da div ela irá cobrir o quadrado de baixo, até que eu use o parametro overflow. -->
         <div class="quadrado3"></div>
     </div>
