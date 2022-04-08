@@ -1,6 +1,7 @@
-var idade = 17
+var idade = 19
 
-if (idade > 18)
-    console.log("pode")
+if (idade >= 18)
+    console.log("pode") 
 
-console.log('não pode')
+else 
+    console.log('não pode')
