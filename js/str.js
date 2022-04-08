@@ -1,4 +1,6 @@
- var str = "valor 'texto' qualquer"
- str += "outro texto"
-//  Aqui eu concatenei dois resultados
- console.log(str);
+ var numero = 8
+ str += "valor qualquer" + numero
+//  Sempre que estiver preto é equivalente a uma str, sempre que estiver azul é um número
+ 
+console.log(numero);
+console.log(str);
