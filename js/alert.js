@@ -1,4 +1,4 @@
 // alert('bom diaa')
-var nome = prompt('qual o seu nome ?')
+var numero = prompt('digite um número')
 
-alert(nome)
+alert('O número que vocè digitou é '+ numero)
