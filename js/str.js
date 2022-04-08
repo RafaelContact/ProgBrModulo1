@@ -1,6 +1,8 @@
- var numero = "8" * 2
- str += "valor qualquer" + numero
-//  As strings só conseguem trabalhar com a adição caso eu tente multiplicar uma string da um erro, mas se ela for só um número do tipo string ele se transforma em um número deixando de ser uma string.
- 
-console.log(numero);
-console.log(str);
+var a = '3'
+
+var b = '5'
+
+var c = a + b
+// Agora ao invez de 8 eu vou ter 35 pois os números foram concatenados
+//  ele entende que usando string e soma eu quero concatenar
+console.log(c)
