@@ -13,14 +13,18 @@ else{
     conceito = 'Regular'
 }
 
+console.log(media)
 console.log(conceito)
 
-switch(conceito){
+switch (conceito) {
 
-    case "otimo":
+    case "Ótimo":
         console.log("Parabéns, você é um ótimo aluno")
+        break;
+
     case "bom":
         console.log("Voce está indo bem")
+        break;
     case "regular":
         console.log("estude mais um pouto")
 }
