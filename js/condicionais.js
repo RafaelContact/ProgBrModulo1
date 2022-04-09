@@ -1,5 +1,11 @@
-var idade = 20
+var nota1 = 5.0
+var nota2 = 5.8
 
-var pode = idade >= 18 ? 'pode' : 'não pode';
+var media = (nota1 + nota2) / 2
 
-console.log(pode)
+if (media > 7){
+    console.log('você passou')
+}
+else{
+    console.log('sua nota', media ,'não foi suficiente para passar')
+}
