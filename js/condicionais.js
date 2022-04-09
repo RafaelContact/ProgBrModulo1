@@ -12,9 +12,12 @@ else if(media >= 6.5){
 else{
     conceito = 'Regular'
 }
+conceito = "mais ou menos"
 
 console.log(media)
 console.log(conceito)
+
+// Se meu conceito mudar e no código abaixo não tiver previsto o valor que ele  iria ter, ira printar o valor padrao para quando isso acontece.
 
 switch (conceito) {
 
@@ -27,4 +30,8 @@ switch (conceito) {
         break;
     case "regular":
         console.log("estude mais um pouto")
+        break
+    default:
+        console.log("houve algum erro")
+        break;
 }
